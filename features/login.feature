@@ -9,7 +9,7 @@ Feature: Login
         And Logout from portal
         Examples:
             | username                            | password                   |
-            |bgajera.contractor@libertyglobal.com | Brijesh@Bynder             |
+            |brijeshgajera@gmail.com | Brijesh@Bynder             |
 
 
     Scenario Outline: Login with invalid Username and Password
@@ -20,7 +20,7 @@ Feature: Login
         Then Login should fail with error message "incorrect username or password"
         Examples:
             | username                            | password                   |
-            |bgajera1234.contractor@libertyglobal.com | Brijesh@Bynder1234             |
+            |brijeshgajera12@gmail.com | Brijesh@Bynder1234             |
 
     Scenario Outline: Login with valid Username and invalid Password
         Given I load the website and I go to "Login" page
@@ -30,7 +30,7 @@ Feature: Login
         Then Login should fail with error message "incorrect username or password"
         Examples:
             | username                            | password                   |
-            |bgajera.contractor@libertyglobal.com | Brijesh@Bynder12344             |
+            |brijeshgajera@gmail.com | Brijesh@Bynder12344             |
 
     Scenario Outline: Login with invalid Username and valid Password
         Given I load the website and I go to "Login" page
@@ -40,7 +40,7 @@ Feature: Login
         Then Login should fail with error message "incorrect username or password"
         Examples:
             | username                            | password                   |
-            |bgajera1234.contractor@libertyglobal.com | Brijesh@Bynder12344             |
+            |brijeshgajera11@gmail.com | Brijesh@Bynder12344             |
 
     Scenario Outline: Login with invalid Username and valid Password
         Given I load the website and I go to "Login" page
@@ -50,7 +50,7 @@ Feature: Login
         Then Login should fail with error message "incorrect username or password"
         Examples:
             | username                            | password                   |
-            |bgajera1234.contractor@libertyglobal.com | Brijesh@Bynder12344             |
+            |brijeshgajera@gmail.com | Brijesh@Bynder12344             |
 
     Scenario Outline: Login with valid Username and blank password
         Given I load the website and I go to "Login" page
@@ -59,4 +59,4 @@ Feature: Login
         Then Login should fail with error message "enter your password"
         Examples:
             | username                            |
-            |bgajera1234.contractor@libertyglobal.com |
+            |brijeshgajera@gmail.com |
